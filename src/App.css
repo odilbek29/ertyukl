@@ -1,0 +1,148 @@
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://0701.static.prezi.com/preview/v2/qolpp5an6umi6hdchx347zf7636jc3sachvcdoaizecfr3dnitcq_3_0.png") no-repeat center center/cover;
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hush kelibsiz oynasi */
+.welcome-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px 24px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+
+}
+
+.welcome-container h1 {
+  color: #0044cc;
+  font-size: clamp(22px, 6vw, 30px);
+  margin-bottom: 10px;
+  font-weight: 700;
+
+}
+
+.welcome-container p {
+  color: #333;
+  font-size: clamp(15px, 4vw, 18px);
+  margin-bottom: 25px;
+}
+.h{
+        width: 450px;
+        padding: 25px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 30px;
+  line-height: 40px;
+}
+
+.start-btn {
+  background: linear-gradient(90deg, #007bff, #0044cc);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: clamp(16px, 5vw, 20px);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 68, 204, 0.3);
+}
+
+.start-btn:hover {
+  background: linear-gradient(90deg, #005be7, #003bb5);
+  transform: scale(1.05);
+}
+
+.start-btn:active {
+  transform: scale(0.97);
+}
+
+/* Keyingi sahifa uchun umumiy sozlamalar */
+.wrapper {
+  background: #ffffffcc;
+  margin: 20px;
+  padding: 24px;
+  border-radius: 20px;
+  max-width: 750px;
+  width: 95%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  color: #0044cc;
+  font-size: clamp(22px, 5.5vw, 30px);
+  margin-bottom: 12px;
+}
+
+.header p {
+  color: #333;
+  font-size: clamp(15px, 3.8vw, 18px);
+  margin-bottom: 24px;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.content p {
+  font-size: clamp(15px, 4vw, 18px);
+  color: #111;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #555;
+  font-size: clamp(13px, 3vw, 16px);
+  margin-top: 25px;
+}
+
+/* Animatsiya */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobilga moslashuv */
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 30px 18px;
+  }
+
+  .start-btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+}
